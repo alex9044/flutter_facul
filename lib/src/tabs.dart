@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application/src/screens/pantalla1.dart';
-import 'package:flutter_application/src/screens/pantalla2.dart';
-import 'package:flutter_application/src/screens/pantalla3.dart';
+import 'package:flutter_application/src/pantallas/pantalla1.dart';
+import 'package:flutter_application/src/pantallas/pantalla2.dart';
+import 'package:flutter_application/src/pantallas/pantalla3.dart';
 
 class Mytabs extends StatefulWidget {
   @override
@@ -16,11 +16,11 @@ class _MytabsState extends State<Mytabs> {
         child: Scaffold(
           appBar: AppBar(
             elevation: 0,
-            title: Text("Ingenieria de Software"),
+            title: Text("Examen final"),
           ),
           body: TabBarView(children: [Pantalla1(), Pantalla2(), Pantalla3()]),
           bottomNavigationBar: Material(
-            color: Colors.red,
+            color: Colors.blueAccent,
             child: TabBar(tabs: [
               Tab(icon: Icon(Icons.image)),
               Tab(icon: Icon(Icons.login)),
